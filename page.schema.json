@@ -39,9 +39,7 @@
                 "MediaLibrary"
             ],
             "Components": [
-                {
-                    "$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"
-                }
+                {}
             ]
         }
     ],
@@ -427,42 +425,13 @@
             "default": [],
             "examples": [
                 [
-                    {
-                        "$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"
-                    }
+                    {}
                 ]
             ],
             "additionalItems": true,
             "items": {
-                "anyOf": [
-                    {
-                        "$id": "#/properties/Components/items/anyOf/0",
-                        "type": "object",
-                        "title": "The first anyOf schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": {},
-                        "examples": [
-                            {
-                                "$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"
-                            }
-                        ],
-                        "required": [
-                            "$ref"
-                        ],
-                        "additionalProperties": true,
-                        "properties": {
-                            "$ref": {
-                                "$id": "#/properties/Components/items/anyOf/0/properties/$ref",
-                                "type": "string",
-                                "title": "The $ref schema",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "",
-                                "examples": [
-                                    "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"
-                                ]
-                            }
-                        }
-                    }
+                "allOf": [
+                    {"$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"}
                 ],
                 "$id": "#/properties/Components/items"
             }
