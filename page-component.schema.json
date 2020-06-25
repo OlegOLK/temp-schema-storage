@@ -1,0 +1,258 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "identifier": "Portal.PageComponent.PCM.Search",
+            "Name": "Search",
+            "Type": "Portal.Component.Search",
+            "Settings": {},
+            "Title": "Search",
+            "IsVisible": true,
+            "IsNested": true,
+            "Contexts": [
+                "Portal.PageComponent.PCM.SearchRefreshQuery",
+                "Portal.PageComponent.PCM.SearchQuery",
+                "Portal.PageComponent.PCM.SearchChangeQuery",
+                "Portal.PageComponent.PCM.SearchSearchResult",
+                "Portal.PageComponent.PCM.SearchTotalResultCount",
+                "Portal.PageComponent.PCM.SearchRefreshSavedSelections"
+            ],
+            "Visualization": {
+                "container": {
+                    "componentContainer": "none",
+                    "showPanelTitle": false,
+                    "collapsible": false,
+                    "collapsedByDefault": false
+                },
+                "version": "1.0"
+            },
+            "IsSystemOwned": false
+        }
+    ],
+    "required": [
+        "identifier",
+        "Name",
+        "Type",
+        "Settings"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "identifier": {
+            "$id": "#/properties/identifier",
+            "type": "string",
+            "title": "The identifier schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Portal.PageComponent.PCM.Search"
+            ]
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "The Name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Search"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Portal.Component.Search"
+            ]
+        },
+        "Settings": {
+            "$id": "#/properties/Settings",
+            "type": "object",
+            "title": "The Settings schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {}
+            ],
+            "required": [],
+            "additionalProperties": true,
+            "properties": {}
+        },
+        "Title": {
+            "$id": "#/properties/Title",
+            "type": "string",
+            "title": "The Title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Search"
+            ]
+        },
+        "IsVisible": {
+            "$id": "#/properties/IsVisible",
+            "type": "boolean",
+            "title": "The IsVisible schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "IsNested": {
+            "$id": "#/properties/IsNested",
+            "type": "boolean",
+            "title": "The IsNested schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "Contexts": {
+            "$id": "#/properties/Contexts",
+            "type": "array",
+            "title": "The Contexts schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "Portal.PageComponent.PCM.SearchRefreshQuery",
+                    "Portal.PageComponent.PCM.SearchQuery"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/Contexts/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Portal.PageComponent.PCM.SearchRefreshQuery",
+                            "Portal.PageComponent.PCM.SearchQuery"
+                        ]
+                    }
+                ],
+                "$id": "#/properties/Contexts/items"
+            }
+        },
+        "Visualization": {
+            "$id": "#/properties/Visualization",
+            "type": "object",
+            "title": "The Visualization schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "container": {
+                        "componentContainer": "none",
+                        "showPanelTitle": false,
+                        "collapsible": false,
+                        "collapsedByDefault": false
+                    },
+                    "version": "1.0"
+                }
+            ],
+            "required": [
+                "container",
+                "version"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "container": {
+                    "$id": "#/properties/Visualization/properties/container",
+                    "type": "object",
+                    "title": "The container schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "componentContainer": "none",
+                            "showPanelTitle": false,
+                            "collapsible": false,
+                            "collapsedByDefault": false
+                        }
+                    ],
+                    "required": [
+                        "componentContainer",
+                        "showPanelTitle",
+                        "collapsible",
+                        "collapsedByDefault"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "componentContainer": {
+                            "$id": "#/properties/Visualization/properties/container/properties/componentContainer",
+                            "type": "string",
+                            "title": "The componentContainer schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "none"
+                            ]
+                        },
+                        "showPanelTitle": {
+                            "$id": "#/properties/Visualization/properties/container/properties/showPanelTitle",
+                            "type": "boolean",
+                            "title": "The showPanelTitle schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "collapsible": {
+                            "$id": "#/properties/Visualization/properties/container/properties/collapsible",
+                            "type": "boolean",
+                            "title": "The collapsible schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "collapsedByDefault": {
+                            "$id": "#/properties/Visualization/properties/container/properties/collapsedByDefault",
+                            "type": "boolean",
+                            "title": "The collapsedByDefault schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        }
+                    }
+                },
+                "version": {
+                    "$id": "#/properties/Visualization/properties/version",
+                    "type": "string",
+                    "title": "The version schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1.0"
+                    ]
+                }
+            }
+        },
+        "IsSystemOwned": {
+            "$id": "#/properties/IsSystemOwned",
+            "type": "boolean",
+            "title": "The IsSystemOwned schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        }
+    }
+}
