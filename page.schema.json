@@ -431,7 +431,7 @@
             "additionalItems": true,
             "items": {
                 "allOf": [
-                    {"$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#/properties"}
+                    {"$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#"}
                 ],
                 "$id": "#/properties/Components/items"
             }
