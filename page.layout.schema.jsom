@@ -11,23 +11,17 @@
                 "Name": "name",
                 "rows": [
                     {
-                        "layoutRow": {
-                            "settings": {},
-                            "columns": [
-                                {
-                                    "layoutColumn": {
-                                        "width": 123,
-                                        "components": [
-                                            {
-                                                "layoutPageComponent": {
-                                                    "identifier": "Portal.PageComponent"
-                                                }
-                                            }
-                                        ]
+                        "settings": {},
+                        "columns": [
+                            {
+                                "width": 123,
+                                "components": [
+                                    {
+                                        "identifier": "Portal.PageComponent"
                                     }
-                                }
-                            ]
-                        }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
@@ -49,23 +43,17 @@
                     "Name": "name",
                     "rows": [
                         {
-                            "layoutRow": {
-                                "settings": {},
-                                "columns": [
-                                    {
-                                        "layoutColumn": {
-                                            "width": 123,
-                                            "components": [
-                                                {
-                                                    "layoutPageComponent": {
-                                                        "identifier": "Portal.PageComponent"
-                                                    }
-                                                }
-                                            ]
+                            "settings": {},
+                            "columns": [
+                                {
+                                    "width": 123,
+                                    "components": [
+                                        {
+                                            "identifier": "Portal.PageComponent"
                                         }
-                                    }
-                                ]
-                            }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -95,23 +83,17 @@
                     "examples": [
                         [
                             {
-                                "layoutRow": {
-                                    "settings": {},
-                                    "columns": [
-                                        {
-                                            "layoutColumn": {
-                                                "width": 123,
-                                                "components": [
-                                                    {
-                                                        "layoutPageComponent": {
-                                                            "identifier": "Portal.PageComponent"
-                                                        }
-                                                    }
-                                                ]
+                                "settings": {},
+                                "columns": [
+                                    {
+                                        "width": 123,
+                                        "components": [
+                                            {
+                                                "identifier": "Portal.PageComponent"
                                             }
-                                        }
-                                    ]
-                                }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     ],
@@ -126,236 +108,143 @@
                                 "default": {},
                                 "examples": [
                                     {
-                                        "layoutRow": {
-                                            "settings": {},
-                                            "columns": [
-                                                {
-                                                    "layoutColumn": {
-                                                        "width": 123,
-                                                        "components": [
-                                                            {
-                                                                "layoutPageComponent": {
-                                                                    "identifier": "Portal.PageComponent"
-                                                                }
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ],
-                                "required": [
-                                    "layoutRow"
-                                ],
-                                "additionalProperties": true,
-                                "properties": {
-                                    "layoutRow": {
-                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow",
-                                        "type": "object",
-                                        "title": "The layoutRow schema",
-                                        "description": "An explanation about the purpose of this instance.",
-                                        "default": {},
-                                        "examples": [
+                                        "settings": {},
+                                        "columns": [
                                             {
-                                                "settings": {},
-                                                "columns": [
+                                                "width": 123,
+                                                "components": [
                                                     {
-                                                        "layoutColumn": {
-                                                            "width": 123,
-                                                            "components": [
-                                                                {
-                                                                    "layoutPageComponent": {
-                                                                        "identifier": "Portal.PageComponent"
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
+                                                        "identifier": "Portal.PageComponent"
                                                     }
                                                 ]
                                             }
+                                        ]
+                                    }
+                                ],
+                                "required": [
+                                    "settings",
+                                    "columns"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "settings": {
+                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/settings",
+                                        "type": "object",
+                                        "title": "The settings schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {}
                                         ],
-                                        "required": [
-                                            "settings",
-                                            "columns"
-                                        ],
+                                        "required": [],
                                         "additionalProperties": true,
-                                        "properties": {
-                                            "settings": {
-                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/settings",
-                                                "type": "object",
-                                                "title": "The settings schema",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": {},
-                                                "examples": [
-                                                    {}
-                                                ],
-                                                "required": [],
-                                                "additionalProperties": true,
-                                                "properties": {}
-                                            },
-                                            "columns": {
-                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns",
-                                                "type": "array",
-                                                "title": "The columns schema",
-                                                "description": "An explanation about the purpose of this instance.",
-                                                "default": [],
-                                                "examples": [
-                                                    [
+                                        "properties": {}
+                                    },
+                                    "columns": {
+                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns",
+                                        "type": "array",
+                                        "title": "The columns schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "width": 123,
+                                                    "components": [
                                                         {
-                                                            "layoutColumn": {
-                                                                "width": 123,
-                                                                "components": [
-                                                                    {
-                                                                        "layoutPageComponent": {
-                                                                            "identifier": "Portal.PageComponent"
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            }
+                                                            "identifier": "Portal.PageComponent"
                                                         }
                                                     ]
-                                                ],
-                                                "additionalItems": true,
-                                                "items": {
-                                                    "anyOf": [
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
                                                         {
-                                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0",
-                                                            "type": "object",
-                                                            "title": "The first anyOf schema",
-                                                            "description": "An explanation about the purpose of this instance.",
-                                                            "default": {},
-                                                            "examples": [
+                                                            "width": 123,
+                                                            "components": [
                                                                 {
-                                                                    "layoutColumn": {
-                                                                        "width": 123,
-                                                                        "components": [
-                                                                            {
-                                                                                "layoutPageComponent": {
-                                                                                    "identifier": "Portal.PageComponent"
-                                                                                }
-                                                                            }
-                                                                        ]
-                                                                    }
+                                                                    "identifier": "Portal.PageComponent"
                                                                 }
-                                                            ],
-                                                            "required": [
-                                                                "layoutColumn"
-                                                            ],
-                                                            "additionalProperties": true,
-                                                            "properties": {
-                                                                "layoutColumn": {
-                                                                    "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn",
-                                                                    "type": "object",
-                                                                    "title": "The layoutColumn schema",
-                                                                    "description": "An explanation about the purpose of this instance.",
-                                                                    "default": {},
-                                                                    "examples": [
-                                                                        {
-                                                                            "width": 123,
-                                                                            "components": [
-                                                                                {
-                                                                                    "layoutPageComponent": {
-                                                                                        "identifier": "Portal.PageComponent"
-                                                                                    }
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ],
-                                                                    "required": [
-                                                                        "width",
-                                                                        "components"
-                                                                    ],
-                                                                    "additionalProperties": true,
-                                                                    "properties": {
-                                                                        "width": {
-                                                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/width",
-                                                                            "type": "integer",
-                                                                            "title": "The width schema",
-                                                                            "description": "An explanation about the purpose of this instance.",
-                                                                            "default": 0,
-                                                                            "examples": [
-                                                                                123
-                                                                            ]
-                                                                        },
-                                                                        "components": {
-                                                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/components",
-                                                                            "type": "array",
-                                                                            "title": "The components schema",
-                                                                            "description": "An explanation about the purpose of this instance.",
-                                                                            "default": [],
-                                                                            "examples": [
-                                                                                [
-                                                                                    {
-                                                                                        "layoutPageComponent": {
-                                                                                            "identifier": "Portal.PageComponent"
-                                                                                        }
-                                                                                    }
-                                                                                ]
-                                                                            ],
-                                                                            "additionalItems": true,
-                                                                            "items": {
-                                                                                "anyOf": [
-                                                                                    {
-                                                                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/components/items/anyOf/0",
-                                                                                        "type": "object",
-                                                                                        "title": "The first anyOf schema",
-                                                                                        "description": "An explanation about the purpose of this instance.",
-                                                                                        "default": {},
-                                                                                        "examples": [
-                                                                                            {
-                                                                                                "layoutPageComponent": {
-                                                                                                    "identifier": "Portal.PageComponent"
-                                                                                                }
-                                                                                            }
-                                                                                        ],
-                                                                                        "required": [
-                                                                                            "layoutPageComponent"
-                                                                                        ],
-                                                                                        "additionalProperties": true,
-                                                                                        "properties": {
-                                                                                            "layoutPageComponent": {
-                                                                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/components/items/anyOf/0/properties/layoutPageComponent",
-                                                                                                "type": "object",
-                                                                                                "title": "The layoutPageComponent schema",
-                                                                                                "description": "An explanation about the purpose of this instance.",
-                                                                                                "default": {},
-                                                                                                "examples": [
-                                                                                                    {
-                                                                                                        "identifier": "Portal.PageComponent"
-                                                                                                    }
-                                                                                                ],
-                                                                                                "required": [
-                                                                                                    "identifier"
-                                                                                                ],
-                                                                                                "additionalProperties": true,
-                                                                                                "properties": {
-                                                                                                    "identifier": {
-                                                                                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/components/items/anyOf/0/properties/layoutPageComponent/properties/identifier",
-                                                                                                        "type": "string",
-                                                                                                        "title": "The identifier schema",
-                                                                                                        "description": "An explanation about the purpose of this instance.",
-                                                                                                        "default": "",
-                                                                                                        "examples": [
-                                                                                                            "Portal.PageComponent"
-                                                                                                        ]
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                ],
-                                                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items/anyOf/0/properties/layoutColumn/properties/components/items"
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
+                                                            ]
                                                         }
                                                     ],
-                                                    "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/layoutRow/properties/columns/items"
+                                                    "required": [
+                                                        "width",
+                                                        "components"
+                                                    ],
+                                                    "additionalProperties": true,
+                                                    "properties": {
+                                                        "width": {
+                                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/width",
+                                                            "type": "integer",
+                                                            "title": "The width schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": 0,
+                                                            "examples": [
+                                                                123
+                                                            ]
+                                                        },
+                                                        "components": {
+                                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components",
+                                                            "type": "array",
+                                                            "title": "The components schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": [],
+                                                            "examples": [
+                                                                [
+                                                                    {
+                                                                        "identifier": "Portal.PageComponent"
+                                                                    }
+                                                                ]
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "items": {
+                                                                "anyOf": [
+                                                                    {
+                                                                        "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components/items/anyOf/0",
+                                                                        "type": "object",
+                                                                        "title": "The first anyOf schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": {},
+                                                                        "examples": [
+                                                                            {
+                                                                                "identifier": "Portal.PageComponent"
+                                                                            }
+                                                                        ],
+                                                                        "required": [
+                                                                            "identifier"
+                                                                        ],
+                                                                        "additionalProperties": true,
+                                                                        "properties": {
+                                                                            "identifier": {
+                                                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components/items/anyOf/0/properties/identifier",
+                                                                                "type": "string",
+                                                                                "title": "The identifier schema",
+                                                                                "description": "An explanation about the purpose of this instance.",
+                                                                                "default": "",
+                                                                                "examples": [
+                                                                                    "Portal.PageComponent"
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components/items"
+                                                            }
+                                                        }
+                                                    }
                                                 }
-                                            }
+                                            ],
+                                            "$id": "#/properties/layoutSection/properties/rows/items/anyOf/0/properties/columns/items"
                                         }
                                     }
                                 }
