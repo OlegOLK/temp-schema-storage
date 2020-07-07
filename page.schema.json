@@ -129,7 +129,7 @@
             "additionalItems": true,
             "items": {
                 "allOf": [
-                    {"$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page-component.schema.json#"}
+                    {"$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/page.layout.schema.json#"}
                 ],
                 "$id": "#/properties/Layout/items"
             }
