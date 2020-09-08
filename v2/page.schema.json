@@ -1,0 +1,449 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": 29052,
+            "identifier": "Portal.Page.HelloWorld",
+            "name": "HelloWorld",
+            "path": {
+                "en-US": "helloworld"
+            },
+            "parent_page_identifier": "Portal.Page.CHProducts",
+            "layout": [
+                {
+                    "name": "HeaderLeft",
+                    "rows": [
+                        {
+                            "settings": null,
+                            "columns": [
+                                {
+                                    "width": 12,
+                                    "components": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "HeaderRight",
+                    "rows": [
+                        {
+                            "settings": null,
+                            "columns": [
+                                {
+                                    "width": 12,
+                                    "components": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MainZone",
+                    "rows": [
+                        {
+                            "settings": null,
+                            "columns": [
+                                {
+                                    "width": 12,
+                                    "components": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "title": {
+                "en-US": "HelloWorld"
+            },
+            "definition_name": null,
+            "is_system": false,
+            "is_in_menu": false,
+            "master_layout_identifier": "Portal.Template.Default",
+            "components": []
+        }
+    ],
+    "required": [
+        "id",
+        "identifier",
+        "name",
+        "path",
+        "parent_page_identifier",
+        "layout",
+        "title",
+        "definition_name",
+        "is_system",
+        "is_in_menu",
+        "master_layout_identifier",
+        "components"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                29052
+            ]
+        },
+        "identifier": {
+            "$id": "#/properties/identifier",
+            "type": "string",
+            "title": "The identifier schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Portal.Page.HelloWorld"
+            ]
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "HelloWorld"
+            ]
+        },
+        "path": {
+            "$id": "#/properties/path",
+            "type": "object",
+            "title": "The path schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "en-US": "helloworld"
+                }
+            ],
+            "required": [
+                "en-US"
+            ],
+            "properties": {
+                "en-US": {
+                    "$id": "#/properties/path/properties/en-US",
+                    "type": "string",
+                    "title": "The en-US schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "helloworld"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "parent_page_identifier": {
+            "$id": "#/properties/parent_page_identifier",
+            "type": "string",
+            "title": "The parent_page_identifier schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Portal.Page.CHProducts"
+            ]
+        },
+        "layout": {
+            "$id": "#/properties/layout",
+            "type": "array",
+            "title": "The layout schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "name": "HeaderLeft",
+                        "rows": [
+                            {
+                                "settings": null,
+                                "columns": [
+                                    {
+                                        "width": 12,
+                                        "components": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "HeaderRight",
+                        "rows": [
+                            {
+                                "settings": null,
+                                "columns": [
+                                    {
+                                        "width": 12,
+                                        "components": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/layout/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/layout/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "name": "HeaderLeft",
+                                "rows": [
+                                    {
+                                        "settings": null,
+                                        "columns": [
+                                            {
+                                                "width": 12,
+                                                "components": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "name",
+                            "rows"
+                        ],
+                        "properties": {
+                            "name": {
+                                "$id": "#/properties/layout/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "HeaderLeft"
+                                ]
+                            },
+                            "rows": {
+                                "$id": "#/properties/layout/items/anyOf/0/properties/rows",
+                                "type": "array",
+                                "title": "The rows schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "settings": null,
+                                            "columns": [
+                                                {
+                                                    "width": 12,
+                                                    "components": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/layout/items/anyOf/0/properties/rows/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "settings": null,
+                                                    "columns": [
+                                                        {
+                                                            "width": 12,
+                                                            "components": []
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "required": [
+                                                "settings",
+                                                "columns"
+                                            ],
+                                            "properties": {
+                                                "settings": {
+                                                    "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/settings",
+                                                    "type": "null",
+                                                    "title": "The settings schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": null,
+                                                    "examples": [
+                                                        null
+                                                    ]
+                                                },
+                                                "columns": {
+                                                    "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns",
+                                                    "type": "array",
+                                                    "title": "The columns schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": [],
+                                                    "examples": [
+                                                        [
+                                                            {
+                                                                "width": 12,
+                                                                "components": []
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "additionalItems": true,
+                                                    "items": {
+                                                        "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns/items",
+                                                        "anyOf": [
+                                                            {
+                                                                "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0",
+                                                                "type": "object",
+                                                                "title": "The first anyOf schema",
+                                                                "description": "An explanation about the purpose of this instance.",
+                                                                "default": {},
+                                                                "examples": [
+                                                                    {
+                                                                        "width": 12,
+                                                                        "components": []
+                                                                    }
+                                                                ],
+                                                                "required": [
+                                                                    "width",
+                                                                    "components"
+                                                                ],
+                                                                "properties": {
+                                                                    "width": {
+                                                                        "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/width",
+                                                                        "type": "integer",
+                                                                        "title": "The width schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": 0,
+                                                                        "examples": [
+                                                                            12
+                                                                        ]
+                                                                    },
+                                                                    "components": {
+                                                                        "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components",
+                                                                        "type": "array",
+                                                                        "title": "The components schema",
+                                                                        "description": "An explanation about the purpose of this instance.",
+                                                                        "default": [],
+                                                                        "examples": [
+                                                                            []
+                                                                        ],
+                                                                        "additionalItems": true,
+                                                                        "items": {
+                                                                            "$id": "#/properties/layout/items/anyOf/0/properties/rows/items/anyOf/0/properties/columns/items/anyOf/0/properties/components/items"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "additionalProperties": true
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "object",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "en-US": "HelloWorld"
+                }
+            ],
+            "required": [
+                "en-US"
+            ],
+            "properties": {
+                "en-US": {
+                    "$id": "#/properties/title/properties/en-US",
+                    "type": "string",
+                    "title": "The en-US schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "HelloWorld"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "definition_name": {
+            "$id": "#/properties/definition_name",
+            "type": "null",
+            "title": "The definition_name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "is_system": {
+            "$id": "#/properties/is_system",
+            "type": "boolean",
+            "title": "The is_system schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "is_in_menu": {
+            "$id": "#/properties/is_in_menu",
+            "type": "boolean",
+            "title": "The is_in_menu schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "master_layout_identifier": {
+            "$id": "#/properties/master_layout_identifier",
+            "type": "string",
+            "title": "The master_layout_identifier schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Portal.Template.Default"
+            ]
+        },
+        "components": {
+            "$id": "#/properties/components",
+            "type": "array",
+            "title": "The components schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/components/items"
+            }
+        }
+    },
+    "additionalProperties": true
+}
