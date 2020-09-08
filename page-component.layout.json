@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "ZoneName": "HeaderLeft",
+            "ColumnIndex": 0,
+            "RowIndex": 0,
+            "IdentifierIndex": 1
+        }
+    ],
+    "required": [
+        "ZoneName",
+        "ColumnIndex",
+        "RowIndex",
+        "IdentifierIndex"
+    ],
+    "properties": {
+        "ZoneName": {
+            "$id": "#/properties/ZoneName",
+            "type": "string",
+            "title": "The ZoneName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "HeaderLeft"
+            ]
+        },
+        "ColumnIndex": {
+            "$id": "#/properties/ColumnIndex",
+            "type": "integer",
+            "title": "The ColumnIndex schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "RowIndex": {
+            "$id": "#/properties/RowIndex",
+            "type": "integer",
+            "title": "The RowIndex schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "IdentifierIndex": {
+            "$id": "#/properties/IdentifierIndex",
+            "type": "integer",
+            "title": "The IdentifierIndex schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        }
+    },
+    "additionalProperties": true
+}
