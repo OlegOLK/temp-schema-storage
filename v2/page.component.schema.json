@@ -174,7 +174,7 @@
         },
         "component_layout ": {
             "$id": "#/properties/component_layout%20",
-            "$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/v2/page.component.layout.schema#"
+            "$ref": "https://raw.githubusercontent.com/OlegOLK/temp-schema-storage/master/v2/page.component.layout.schema#",
             "type": "object",
             "title": "The component_layout  schema",
             "description": "An explanation about the purpose of this instance.",
